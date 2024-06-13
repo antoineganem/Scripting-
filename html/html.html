@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Antoine Ganem Nuñez">
+    <meta name="description" content="Web development blog for begineers">
+    <link href="/css/html.css" rel="stylesheet" >
+
+    <title>HTML Notebook</title>
+</head>
+<body>
+    
+    <h1>HTML Notebook</h1>
+    
+        <p id="intro">HTML stands for Hyper Text 
+            Markup Language. HyperText allows to create  links 
+            that allow visitors to move from one page to another quickly 
+            and easily.It gives strucutre to the web page though HTML tags or elements.
+         </p>
+        
+         <p id="tags-intro">Tags are the markup language since each tags is a keyword that provides 
+            meaning and functionality to the document.   
+         </p>
+         
+         <h3>HTML tag syntaxis</h3>
+         <div class="img-container">
+            <img src="/images/htmlimages/tags.png"  height="400px" width="400px" alt="HTML tag syntaxis">
+            <img src="/images/htmlimages/close.tag.png"  height="400px" width="400px" alt="HTML tag syntaxis">
+         </div>  
+         <h4>Some HTML tags</h4>
+         <div class="img-container">
+            <img src="/images/htmlimages/alltags.png" height="400px" width="380px"   alt="HTML tag syntaxis"> 
+        </div>      
+        <h2>HTML Tags Table</h2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>The root element of an HTML document</td>
+                <td>&lt;html&gt;&lt;/html&gt;</td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>Defines the document's body</td>
+                <td>&lt;body&gt;&lt;/body&gt;</td>
+            </tr>
+            <tr>
+                <td>h1</td>
+                <td>Defines the largest heading</td>
+                <td>&lt;h1&gt;&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>h2</td>
+                <td>Defines the second largest heading</td>
+                <td>&lt;h2&gt;&lt;/h2&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Paragraphs and Bold</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>Defines a paragraph</td>
+                <td>&lt;p&gt;&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>bold</td>
+                <td>Defines bold text like this <b>bold</b></td>
+                <td>&lt;bold&gt;&lt;/bold&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Line Breaks & Horizontal Rules</td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>Add a line break inside the middle of the paragraph</td>
+                <td>&lt;/br&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Ordered Lists</td>
+            </tr>
+            <tr>
+                <td>ol</td>
+                <td>Defines an ordered list</td>
+                <td>&lt;ol&gt;&lt;/ol&gt;</td>
+            </tr>
+            <tr>
+                <td>li</td>
+                <td>Defines a list item inside all types of HTML lists</td>
+                <td>&lt;li&gt;&lt;/li&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Unordered Lists</td>
+            </tr>
+            <tr>
+                <td>ul</td>
+                <td>Defines an unordered list</td>
+                <td>&lt;ul&gt;&lt;/ul&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Nested Lists</td>
+            </tr>
+            <tr>
+                <td>li</td>
+                <td>A li element inside of another li elements creates 
+                    a sublist or nested list
+                </td>
+                <td>&lt;li&gt;&lt;/li&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Links</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>Defines a hyperlink</td>
+                <td>&lt;a href="url"&gt;&lt;/a&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="headings">Images</td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>Defines an image</td>
+                <td>&lt;img src="url" alt="description"&gt;</td>
+            </tr>
+        </table>  
+        <h3>Links</h3> 
+        <div id="Links">
+            <p>Links allow us to move form one web page to another quickly and easily. 
+                The anchor tag is used to create links. The href attribute is used to specify the URL of the page the link goes to.
+            </p>
+            <p>URL stands for Uniform Resource Locator and there are two types of URL:</p>
+            <ul>
+                <li>Absolute Url is the full web address for a site. For example: </li>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a></li>
+                        <li><a href="https://www.freecodecamp.org/learn/">FreeCodeCamp</a></li>
+                    </ul>
+                </br>
+                <li>Relative Url is a link to other pages inside of the same site.For example:</li>
+                    <ul>
+                        <li><a href="html.html">HTML Notebook</a></li>
+                        <li><a href="css.html">CSS Notebook</a></li>
+                        <li><a href="javascript.html">Javascript Notebook</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <h3>Images</h3>
+        <div id="Images">
+            <p>Images are a great way to make your web page more visually appealing. 
+               The img tag is used to add images to a web page. 
+               The src attribute is used to specify the URL of the image file.
+            </p>
+        </div>
+        <img src="/images/htmlimages/ImageExample.png" alt="Example logo">
+</body>
+</html>

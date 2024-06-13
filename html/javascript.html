@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Notebook </title>
+    <link rel="stylesheet" href="/css/javascript.css">
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p>JavaScript is a programming language that enables you to create
+        dynamically updating content,
+        control multimedia, animate images,
+        and much more. JavaScript is a high-level, interpreted programming language
+    </p>
+    <h2>Variables</h2>
+    <table> 
+        <tr>
+            <th>Variable</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>var</td>
+            <td>Declares a variable, optionally initializing it to a value</td>
+            <td>var x = 5;</td>
+        </tr>
+        <tr>
+            <td>let</td>
+            <td>Declares a block-scoped, local variable, optionally initializing it to a value</td>
+            <td>let x = 5;</td>
+        </tr>
+        <tr>
+            <td>const</td>
+            <td>Declares a block-scoped, read-only named constant</td>
+            <td>const x = 5;</td>
+        </tr>
+    </table>
+    <p>Variables define by the let and var keyword can change values with the equal operator = </p>
+    <h2>Control flow</h2>
+    <div id="ControlFlow-container">
+        <p>Control flow is the order in which the computer executes statements in a script.
+             A script is a series of instructions that a computer can follow one-by-one. 
+             Each individual instruction or step is known as a statement. 
+             Statements are like individual sentences. Just as sentences are separated by periods,
+            JavaScript statements are separated by semicolons.</p>
+        <p>As JavaScript is a interpreted language it runs from top to bottom reading and executing line by 
+            line. 
+        </p>
+        <h3>Conditional execution</h3>
+        <p>Conditional statements are used to perform different actions based on different conditions.
+            In JavaScript we have the following conditional statements:
+        </p>
+        <ul>
+            <li>if statement - use to execute a block of code if a condition is true</li>
+            <li>else statement - use to execute a block of code if the same condition is false</li>
+            <li>else if statement - use to specify a new condition to test if the first condition is false</li>
+            <li>switch statement - use to select one of many code blocks to be executed</li>
+        </ul>
+        <img src="/images/javascriptImages/conditionalImage.png" alt="conditional image">
+        <h3>While Loops</h3>
+        <p>It is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition.
+            The while loop can be thought of as a repeating if statement.
+        </p>
+        <p>As an example that actually does something useful,
+            we can now write a program that calculates and shows 
+            the value of 2 to the 10th power.
+        </p>
+        <img src="/images/javascriptImages/whileLoops.png" alt="while loop image">
+        <h3>For Loops</h3>
+        <p>It is a control flow statement for specifying iteration, which allows code to be executed repeatedly.
+            A for loop is a repetition control structure that allows you to efficiently write a loop that needs to 
+            execute a specific number of times.
+        </p>
+    </div>
+    <h2>Functions</h2>
+    <div id="function-container">
+        <p>A function is a block of code that can be called by name. The code inside a function is executed when the function is invoked.
+            You can pass data, known as parameters, into a function. Functions can return data as a result.
+            It helps to avoid repeating code and makes the code more readable and reusable.
+        </p>
+        <code> 
+            function myFunction(p1, p2) { </br>
+                return p1 * p2;   // The function returns the product of p1 and p2 <br>
+            }
+        </code>
+        <p>Functions are defined with the function keyword, followed by a name, followed by parentheses ().</p>
+        <h3>Asynchronous Functions</h3>
+        <p>JavaScript is a single-threaded language, meaning it has only one call stack and one memory heap.
+            Asynchronous functions are functions that return a promise. A promise is an object that represents the eventual completion (or failure)
+            of an asynchronous operation and its resulting value.
+        </p>
+        <p>To handle asynchronous operations, JavaScript uses a special keyword <code>async</code>. An asynchronous function can contain an <code>await</code> expression,
+            which pauses the execution of the function and waits for the promise to resolve, then resumes the execution and returns the resolved value.
+        </p>
+        <p>
+            The <code>await</code> keyword can only be used inside an <code>async</code> function. This allows you to write asynchronous code that looks synchronous.
+            While waiting for the promise to resolve, the interpreter can continue executing other code.
+        </p>
+        <code>
+            async function fetchData() { <br>
+                const response = await fetch('https://api.example.com/data'); <br>
+                const data = await response.json(); <br>
+                console.log(data); <br>
+            }
+        </code>
+        <p>In the example above, the <code>fetchData</code> function fetches data from an API and waits for the response. It then waits for the response to be converted to JSON
+            and logs the data to the console.
+        </p>
+    </div>
+    <h2>Objects</h2>
+    <div>
+        <p>Objects are used to store collections of data and more complex entities. They are used to store various keyed collections and more complex entities.
+            An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”),
+            and value can be anything.
+        </p>
+        <p>Objects are mutable, meaning their properties can be changed, and new properties can be added.</p>
+        <h2>JSON Stringify and JSON parse</h2>
+        <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. 
+            It is easy for humans to read and write. It is easy for machines to parse and generate.
+            <ul>
+                <li>JSON.stringify() - Converts a JavaScript object or value to a JSON string</li>
+                <li>JSON.parse() - Converts a JSON string to a JavaScript object</li>
+            </ul>
+    </div>
+    <h2>DOM Manipulation</h2>
+    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes.
+        The DOM is used to interact with the HTML document. You can use JavaScript to change the content, structure, and style of an HTML document.
+    </p>
+    <p>There are several methods and properties that allow you to manipulate the DOM. Some of the most common methods include:</p>
+    <ul>
+        <li>document.getElementById() - Returns the element with the specified ID</li>
+        <li>document.getElementsByClassName() - Returns a collection of elements with the specified class name</li>
+        <li>document.getElementsByTagName() - Returns a collection of elements with the specified tag name</li>
+        <li>document.createElement() - Creates a new element</li>
+        <li>element.innerHTML - Sets or returns the HTML content of an element</li>
+        <li>element.style.property - Sets or returns the style of an element</li>
+        <li>element.setAttribute() - Sets the value of an attribute on the specified element</li>
+        <li>element.addEventListener() - Attaches an event handler to the specified element</li>
+    </ul>
+    <h2>Events</h2>
+    <p>Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if desired.
+        For example, if the user clicks a button on a webpage, you might want to respond to that action by displaying an information box.
+    </p>
+    <p>There are many types of events that can occur in a web browser, such as:</p>
+    <ul>
+        <li>Mouse events - Occur when the mouse is moved or clicked</li>
+        <li>Keyboard events - Occur when a key is pressed or released</li>
+        <li>Form events - Occur when a form is submitted or reset</li>
+        <li>Document events - Occur when the document is loaded or unloaded</li>
+        <li>Window events - Occur when the browser window is resized or scrolled</li>
+    </ul>
+    <p>Event listeners are used to listen for events and execute code when they occur. You can add event listeners to elements using the addEventListener() method.</p> 
+    <h2>Example</h2>
+    <h2>Mouse Event Example</h2>
+    <button id="mouseEventBtn">Click me</button>
+    <p id="mouseEventResult"></p>
+
+    <h2>Keyboard Event Example</h2>
+    <input type="text" id="keyboardEventInput" placeholder="Type something...">
+    <p id="keyboardEventResult"></p>
+
+    <h2>Form Event Example</h2>
+    <form id="formEvent">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="formEventResult"></p>
+
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

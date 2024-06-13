@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0 20%;
+    padding: 3%;
+}
+
+
+h1 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Box-container {
+    width: 400px;
+    height: 400px;
+    border: 5px solid #2c3e50;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#paddingExample {
+
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between this example and the next */
+}
+
+#marginExample {
+    height: 100px;
+    border: 5px solid #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#margin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#margin-space {
+    width:95px;
+}
+
+
+li {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#Ext-container {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

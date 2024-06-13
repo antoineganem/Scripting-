@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Notebook</title>
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+    <h1>CSS Notebook</h1>
+        <p id="intro">
+            CSS is used to give style to the HTML document. 
+            With CSS, 
+            you can control the color, 
+            font, the size of text, the spacing 
+            between elements, how elements are positioned and laid out,
+            what background images or background colors are to be used,
+            different displays for different devices and screen sizes, and much more!
+        </p>
+        <h3>Understanding CSS: thinking inside the box</h3>
+        <p>The key to understanding how CSS works is to imagine that
+            there is an invisible box around every HTML element.CSS allows you to create
+            rules that control the way that each individual box (and the contents of that box) 
+            is presented.
+        </p>
+        <h3>Some properties to center a div</h3>
+        <div class="Box-container">
+            <p id="paddingExample">----padding: The distance between the border and the element inside the box 
+                (padding: 20px;)
+            </p>
+            <div id="margin-container">
+                <div id = "margin-space">
+                    <p>--------</p>
+                </div>
+                <div id="marginExample">
+                    margin: The distance between the border and the element outside the box 
+                    (margin: 20px;)
+                </div>
+            </div>
+        </div>
+        <h3>External CSS </h3>
+        <div id="External CSS">
+            <p>In the html file we can use the link element to tell the browser where to find the CSS file 
+                used tpo style the page.
+            </p>
+            <h3>Link attribute</h3>
+            <ul>
+                <li>1.HREF: Specifies the path to the CSS file</li>
+                <li>2.TYPE: Specifies the type of document being linked to. The value shoud 
+                    be text/css.
+                </li>
+                <li>3.REL: Specifies the relationship between the HTML file and the linked document.
+                    The value should be stylesheet as the relation establish.
+            </ul>
+            <div id="Ext-container">
+                <p>HTML Example </p>
+                <code>
+                    &lt;link href="styles.css" type="text/css" rel="stylesheet"&gt;
+                </code>
+                <p>Example in the CSS file</p>
+                <img src="/images/cssImages/ExternalCSS.png" alt="External CSS">
+                <p>How to target differents CSS selectors</p>
+                <img src="/images/cssImages/CSSSelector.png" alt="External CSS">
+            </div>
+            <div id="flex-container">
+                <h3>Flexbox</h3>
+                <p>Flexbox is a layout mode that provides 
+                for the arrangement of elements on a page such that the elements
+                behave predictably when the page layout must accommodate different screen sizes
+                and different display devices.</p>
+                <code>
+                    display: flex; </br>
+                    <hr>
+                    flex-direction: column; </br>
+                    <hr>
+                    justify-content: center; </br>
+                    <hr>
+                    align-items: center; </br>
+                    <hr>
+                    font-family: Source serif Pro; </br>
+                    <hr>
+                </code>
+            </div>
+        </div>
+</body>
+</html>
